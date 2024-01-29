@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="col-md-5 mx-auto">
+    <div class="card mt-5 text-center">
+        <div class="card-header">
+            <h6>Registro Especialidad</h6>
+        </div>
+        <div class="card-body">
+            <form action="/new" method="post" id="form2" >
+         
+                <div class="form-group">
+                    <h6 >Ingrese el nombre</h6>
+                    <input type="text" name="nombre"  class="form-control">
+                    <h6 >Ingrese el apellido</h6>
+                    <input type="text" name="apellido"  class="form-control">
+                    <h6 >Ingrese el correo</h6>
+                    <input type="text" name="correo"  class="form-control">
+                    <h6 >Ingrese la contraseña</h6>
+                    <input type="text" name="contraseña"  class="form-control">
+                </div>
+
+                <button class="btn btn-primary btn-block mt-4">Crear</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
